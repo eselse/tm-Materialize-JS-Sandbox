@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3 class="center">Some JS Stuff for materialize framework</h3>
+
+        <!-- Carousel -->
+        <h1>Carousel</h1>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/1.jpeg"></a>
+            <a class="carousel-item" href="#two!"><img src="img/2.jpeg"></a>
+            <a class="carousel-item" href="#three!"><img src="img/3.jpeg"></a>
+            <a class="carousel-item" href="#four!"><img src="img/4.jpeg"></a>
+            <a class="carousel-item" href="#five!"><img src="img/5.jpeg"></a>
+        </div>
+
+        <!-- Carousel Full Slider -->
+        <h1>Carousel Full Slider</h1>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img src="https://source.unsplash.com/1600x900/?sky"></a>
+            <a class="carousel-item" href="#two!"><img src="https://source.unsplash.com/1600x900/?mountains"></a>
+            <a class="carousel-item" href="#three!"><img src="https://source.unsplash.com/1600x900/?people"></a>
+            <a class="carousel-item" href="#four!"><img src="https://source.unsplash.com/1600x900/?animals"></a>
+            <a class="carousel-item" href="#five!"><img src="https://source.unsplash.com/1600x900/?sity"></a>
+        </div>
+
+        <!-- Collapsible -->
+        <h1>Collapsible</h1>
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i> First
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, modi. </span>
+                </div>
+            </li>
+            <li class="active">
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i> Second
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, modi. </span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header">
+                    <i class="material-icons">filter_drama</i> Third
+                </div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, modi. </span>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Toasts -->
+        <h1>Toasts</h1>
+        <a class="btn" onclick="M.toast({html: 'I am a toast'})">Toast!</a>
+
+        <!-- Tooltips -->
+        <h1>Tooltips</h1>
+        <a class="btn tooltipped" data-position="left" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="top" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="bottom" data-tooltip="I am a tooltip">Hover me!</a>
+        <a class="btn tooltipped" data-position="right" data-tooltip="I am a tooltip">Hover me!</a>
+
+        <hr>
+
+        <!-- Dropdown -->
+        <h1>Dropdown</h1>
+        <a class="dropdown-trigger btn" href="#" data-target="dropdown1">Dropdown</a>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#!">One</a></li>
+            <li><a href="#!">Two</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>Four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>Five</a></li>
+        </ul>
+
+        <!-- Material Boxed -->
+        <h1>Material Boxed</h1>
+        <img src="https://source.unsplash.com/300x300/?sky" alt="random image" class="materialboxed" data-caption="Image caption">
+
+        <!-- Slider -->
+        <h1>Slider</h1>
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="https://source.unsplash.com/300x300/?nature" alt="dog image">
+                    <div class="caption center-align">
+                        <h3>This is our tagline</h3>
+                        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://source.unsplash.com/300x300/?nature" alt="dog image">
+                    <div class="caption center-align">
+                        <h3>This is our tagline</h3>
+                        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://source.unsplash.com/300x300/?nature" alt="dog image">
+                    <div class="caption left-align">
+                        <h3>This is our tagline</h3>
+                        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://source.unsplash.com/300x300/?nature" alt="dog image">
+                    <div class="caption right-align">
+                        <h3>This is our tagline</h3>
+                        <h5 class="light grey-text text-lighten-3">Here is our slogan</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Modal -->
+        <h1>Modals</h1>
+
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <!-- Bottom Sheet Modals -->
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal2" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+        <!-- Modals with Fixed Footer -->
+        <!-- Modal Trigger -->
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal3">Modal</a>
+
+        <!-- Modal Structure -->
+        <div id="modal3" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+        <nav>
+            <!-- navbar content here  -->
+        </nav>
+
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="https://materializecss.com/images/office.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="https://materializecss.com/images/yuna.jpg"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+            <li><a href="#!">Second Link</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+        <!-- Tabs -->
+        <h1>Tabs</h1>
+
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                    <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+
+    </div>
+
+    <script>
+        var instance = M.Tabs.init(el);
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+        M.toast({ html: 'I am a toast!' })
+    </script>
+
+    <!-- br -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- br's end -->
+
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
+</html>
